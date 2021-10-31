@@ -1,0 +1,187 @@
+<link rel="stylesheet" href="style.css">
+<div class="container">
+  <header id="header">
+    <h1 id="title" class="text-center">
+      Job Application
+    </h1>
+    <p id="descroption" class="descroption text-center">
+      Thank you for taking the time to complete our job application
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <lable id="name-label" for="name">Name</label>
+      <input
+             type="text"
+             name="name"
+             class="form-control"
+             id="name"
+             placeholder="Enter your name"
+             required
+    </div>
+          <div class="form-group">
+      <lable id="email-label" for="email">Email</label>
+      <input
+             type="email"
+             name="email"
+             class="form-control"
+             id="email"
+             placeholder="Enter your email"
+             required
+    </div>
+                      <div class="form-group">
+      <lable id="phone-label" for="phone">Phone number</label>
+      <input
+             type="tel"
+             name="phone"
+             class="form-control"
+             id="phone"
+             pattern="[0-9]{7-12}"
+             placeholder="Enter your phone number"
+             required
+    </div>
+            <div class="form-group">
+      <lable id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+      <input
+             type="number"
+             name="age"
+             class="form-control"
+             id="number"
+             min="18"
+             max="200"
+             placeholder="Age"
+    </div>
+              <div class="form-group">
+                <p>Whats your current education level?</p>
+                <select id="dropdown" class="form-control" name="education" required>
+                  <option disabled selected value>Education level</option>
+                  <option value="school">School graduated</option>
+                  <option value="student">Student</option>
+                  <option value="bachelor">	Bachelor's degre</option>
+                  <option value="master">	Master's degre</option>
+                  <option value="doctoral">	Doctoral degre</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>How were you referred to us?</p>
+                <label>
+                <input
+                       name="user-reffer"
+                       vlue="website"
+                       type="radio"
+                       class="input-radio"
+                       checked/>On your website
+                </label>
+                                <label>
+                <input
+                       name="user-reffer"
+                       vlue="website"
+                       type="radio"
+                       class="input-radio"/>Facebook
+                </label>
+                <label>
+                                <input
+                       name="user-reffer"
+                       vlue="website"
+                       type="radio"
+                       class="input-radio"/>Radio
+                </label>
+                <label>
+                              <input
+                       name="user-reffer"
+                       vlue="website"
+                       type="radio"
+                       class="input-radio"/>Television
+                </label>
+              <label>
+                            <input
+                       name="user-reffer"
+                       vlue="website"
+                       type="radio"
+                       class="input-radio"/>Current Employees
+                </label>
+              <label>
+                      <input
+                       name="user-reffer"
+                       vlue="website"
+                       type="radio"
+                       class="input-radio"/>Other
+                </label>
+    <div class="form-group">
+                <p>On wich position you want to be accepted?</p>
+                <select id="dropdown" class="form-control" name="position" required>
+                  <option disabled selected value>Pick position</option>
+                  <option value="sales">Sales manager</option>
+                  <option value="support">Customer Support</option>
+                  <option value="analyst">System analyst</option>
+                  <option value="front-end">Front-end Developer</option>
+                  <option value="back-end">Back-end Developer</option>
+                </select>
+              </div>
+    <div class="form-group">
+      <p>Please choose skills that you have<span class="clue">(Check all that apply)</span></p>
+      <label>
+        <input
+               name="skill"
+               value="english"
+               type="checkbox"
+               class="input-checkbox"/>Fluent in English
+      </label>
+            <label>
+        <input
+               name="skill"
+               value="front-end"
+               type="checkbox"
+               class="input-checkbox"/>Front-end development
+      </label>
+            <label>
+        <input
+               name="skill"
+               value="back-end"
+               type="checkbox"
+               class="input-checkbox"/>back-end development
+      </label>
+            <label>
+        <input
+               name="skill"
+               value="sales"
+               type="checkbox"
+               class="input-checkbox"/>Sales expierenced
+      </label>
+            <label>
+        <input
+               name="skill"
+               value="analitic"
+               type="checkbox"
+               class="input-checkbox"/>Data analitic
+      </label>
+            <label>
+        <input
+               name="skill"
+               value="customer"
+               type="checkbox"
+               class="input-checkbox"/>Customer service expirienced
+      </label>
+       <div class="form-group">
+      <p>Please describe your past wotk expiriences<span class="clue">(if there is any)</span></p>
+         <textarea class="input-textarea"
+                   name="expiriences"
+                   id="comments"
+                   placeholder="Enter your past job expiriences description"></textarea>
+      </div>
+             <div class="form-group">
+      <p>Additional information about yourself<span class="clue">(if there is any)</span></p>
+         <textarea class="input-textarea"
+                   name="additional-info"
+                   id="comments"
+                   placeholder="Enter your additional information about yourself"></textarea>
+      </div>
+       <div class="form-group">
+         <button class="submit-button"
+                 type="submit"
+                 id="submit">
+           Submit
+           </button>
+         </div>
+  </form>
+</div>
